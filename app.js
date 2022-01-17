@@ -20,6 +20,17 @@ const perimetroCirculo = (radio) => diametroCirculo(radio) * PI;
 
 const areaCirculo = (radio) => (radio * radio) * PI;
 
+//codigo triangulo isoceles 
+const calcAlturaTrianguloIsoceles = (lado1,lado2,base) => {
+    if (lado1 === lado2 && lado1 !== base) {
+        const heigth = Math.sqrt((lado1 * lado2) - ((base * base) / 4)).toFixed(2);
+        alert(`Triangulo isoceles con altura ${heigth}cm`);
+    } else {
+            alert("No es un triangulo isoceles");
+    }
+};
+
+
 
 //conexion hacia HTML 
 const calcPerimetroCuadrado = () => {
@@ -80,3 +91,12 @@ const calcAreaCirculo = () => {
     const area = areaCirculo(value);
     alert(`El area del circulo es de: ${area}`);
 };
+
+// Altura isoceles
+const calcAlturaTriangulo = () => {
+    const input1 = parseInt(document.getElementById("inputTrianguloLado1").value);
+    const input2 = parseInt(document.getElementById("inputTrianguloLado2").value);
+    const input3 = parseInt(document.getElementById("inputBase").value);
+    calcAlturaTrianguloIsoceles(input1,input2,input3);
+}
+

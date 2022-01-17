@@ -53,7 +53,7 @@ body {
     border: .3rem solid rgb(134, 110, 110);
     border-radius: .5rem;
     width: 300px;
-    height: 400px;
+    height: 500px;
     margin-top: 3rem;
 }
 .card .box-img {
@@ -61,11 +61,94 @@ body {
     height: 200px;
     position: relative;
     overflow: hidden;
+    border-bottom: 4px double brown;
 }
-.card .box-img img {
+.box-img .img-cuadrado {
+    width: 320px;
+    height: auto;
+    position: absolute;
+    top: -26px;
+    left: -8px;
+}
+.box-img .img-triangulo {
     width: 300px;
     height: auto;
     position: absolute;
     top: -10px;
     right: -6.5px;
+}
+.box-img .img-circulo {
+    width: 300px;
+    height: 256px;
+    position: absolute;
+    bottom: -29px;
+    left: -2px;
+}
+
+
+.card .info {
+    margin-top: 0px;
+}
+.card .info h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Luxurious Roman';
+    color: gainsboro
+}
+.card .info p {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(31, 31, 31);
+    margin-bottom: 10px;
+}
+.card .info .form-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info .form-items label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-items label span {
+    font-size: .9rem;
+    font-family: 'Luxurious Roman';
+    color: rgb(31, 31, 31);
+    margin-left: 1.8rem;
+}
+.form-items label input {
+    width: 50%;
+    height: 1.5rem;
+    border-radius: .5rem;
+    border: .1rem solid rgb(134, 110, 110);
+    padding: .5rem;
+    margin: 0 1.8rem 1rem 0; 
+}
+.form-items .box-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-items .box-button button {
+    width: 250px;
+    height: 1.5rem;
+    border-radius: .5rem;
+    border: .1rem solid rgb(134, 110, 110);
+    background: brown;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Luxurious Roman';
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all .2s ease-in;
+}
+.form-items .box-button button:first-child {
+    margin-top: -1.5rem;
+}
+.form-items .box-button button:hover {
+    background: rgb(134, 110, 110);
+    color: black;
 }

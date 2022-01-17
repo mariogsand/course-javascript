@@ -19,60 +19,101 @@
         <section class="card-container">
             <article class="card" class="tarjeta-cuadro">
                 <figure class="box-img">
-                    <img src="img/cuadro.png" alt="cuadro">
+                    <img class="img-cuadrado" src="https://es-static.z-dn.net/files/d29/10f24587a66f99181f2f340b874111f3.jpg" alt="cuadro">
                 </figure>
-                <h2>Cuadrado</h2>
-                <form action="">
-                    <label for="inputCuadrado">
-                        <span>Escribe cuanto mide un lado de tu cuadrado</span>
-                        <input type="number" id="inputCuadrado">
-                    </label>
-                    <button type="button" onclick="calcPerimetroCuadrado()">Calcular perimetro</button>
-                    <button type="button" onclick="calcAreaCuadrado()">Calcular el area</button>
-                </form>
+                <div class="info">
+                    <h2>Cuadrado</h2>
+                    <p>Ingresa el parametro</p>
+                    <form class="form-items" action="">
+                        <label for="inputCuadrado">
+                            <span>Lado</span>
+                            <input type="number" id="inputCuadrado">
+                        </label>
+                        <div class="box-button">
+                            <button type="button" onclick="calcPerimetroCuadrado()">Calcular perimetro</button>
+                            <button type="button" onclick="calcAreaCuadrado()">Calcular el area</button>
+                        </div>
+                    </form>
+                </div>
             </article>
     
             <article class="card">
                 <figure class="box-img">
-                    <img src="https://sites.google.com/site/puramate1662/_/rsrc/1467136309259/recursos-digitales/area-de-un-triangulo/triangulo-1-1334014719.png.jpg" alt="cuadrado">
+                    <img class="img-triangulo" src="https://sites.google.com/site/puramate1662/_/rsrc/1467136309259/recursos-digitales/area-de-un-triangulo/triangulo-1-1334014719.png.jpg" alt="cuadrado">
                 </figure>
-                <p>Escribe los lados del triangulo</p>
-                <form action="">
-                    <label for="inputTrianguloLadoA">
-                        <span>Lado A</span>
-                        <input type="number" id="inputTrianguloLadoA">
-                    </label>
-                    <label for="inputTrianguloLadoB">
-                        <span>Lado B</span>
-                        <input type="number" id="inputTrianguloLadoB">
-                    </label>
-                    <label for="inputBasetriangulo">
-                        <span>Base</span>
-                        <input type="number" id="inputBaseTriangulo">
-                    </label>
-                    <label for="inputAlturaTriangulo">
-                        <span>Altura</span>
-                        <input type="number" id="inputAlturaTriangulo">
-                    </label>
-                    <button type="button" onclick="calcPerimetroTriangulo()">Calcular Perimetro</button>
-                    <button type="button" onclick="calcAreaTriangulo()">Calcular Area</button>
-                </form>
+                <div class="info">
+                    <h2>triangulo</h2>
+                    <p>Escribe los lados del triangulo</p>
+                    <form class="form-items" action="">
+                        <label class="label" for="inputTrianguloLadoA">
+                            <span>Lado A</span>
+                            <input type="number" id="inputTrianguloLadoA">
+                        </label>
+                        <label for="inputTrianguloLadoB">
+                            <span>Lado B</span>
+                            <input type="number" id="inputTrianguloLadoB">
+                        </label>
+                        <label for="inputBasetriangulo">
+                            <span>Base</span>
+                            <input type="number" id="inputBaseTriangulo">
+                        </label>
+                        <label for="inputAlturaTriangulo">
+                            <span>Altura</span>
+                            <input type="number" id="inputAlturaTriangulo">
+                        </label>
+                        <div class="box-button">
+                            <button type="button" onclick="calcPerimetroTriangulo()">Calcular Perimetro</button>
+                            <button type="button" onclick="calcAreaTriangulo()">Calcular Area</button>
+                        </div>
+                    </form>
+                </div>
             </article>
     
             <article class="card">
                 <figure class="box-img">
-                    <img src="img/circulo.png" alt="circulo">
+                    <img class="img-circulo" src="https://cursosonlineweb.com/wp-content/uploads/sites/51/2019/01/RADIO.jpg3_.jpg" alt="circulo">
                 </figure>
-                <h2>Circulo</h2>
-                <p>Ingresa los datos solicitados</p>
-                <form action="">
-                    <label for="inputRadioCirculo">
-                        <span>Radio</span>
-                        <input type="number" id="inputRadioCirculo">
-                    </label>
-                    <button type="button" onclick="calcDiametroCirculo()">Calcular Diametro</button>
-                    <button type="button" onclick="calcPerimetroCirculo()">Calcular Perimetro</button>
-                    <button type="button" onclick="calcAreaCirculo()">Calcular Area</buArea</form>
+                <div class="info">
+                    <h2>Circulo</h2>
+                    <p>Ingresa los datos solicitados</p>
+                    <form class="form-items" action="">
+                        <label for="inputRadioCirculo">
+                            <span>Radio</span>
+                            <input type="number" id="inputRadioCirculo">
+                        </label>
+                        <div class="box-button">
+                            <button type="button" onclick="calcDiametroCirculo()">Calcular Diametro</button>
+                            <button type="button" onclick="calcPerimetroCirculo()">Calcular Perimetro</button>
+                            <button type="button" onclick="calcAreaCirculo()">Calcular Area</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="box-img">
+                    <img class="img-triangulo" src="https://sites.google.com/site/puramate1662/_/rsrc/1467136309259/recursos-digitales/area-de-un-triangulo/triangulo-1-1334014719.png.jpg" alt="cuadrado">
+                </figure>
+                <div class="info">
+                    <h2>triangulo</h2>
+                    <p>La altura de un triangulo isoceles </p>
+                    <form class="form-items" action="">
+                        <label class="label" for="inputTrianguloLado1">
+                            <span>Lado A</span>
+                            <input type="number" id="inputTrianguloLado1">
+                        </label>
+                        <label for="inputTrianguloLado2">
+                            <span>Lado B</span>
+                            <input type="number" id="inputTrianguloLado2">
+                        </label>
+                        <label for="inputBase">
+                            <span>Base</span>
+                            <input type="number" id="inputBase">
+                        </label>
+                        <div class="box-button">
+                            <button type="button" onclick="calcAlturaTriangulo()">Calcular Altura</button>
+                        </div>
+                    </form>
+                </div>
             </article>
         </section>
     </main>
