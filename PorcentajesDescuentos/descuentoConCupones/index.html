@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+    <header>
+        <h1>Productos con descuento</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div>
+                    <h2>productos</h2>
+                    <p>Aplica descuento en tus compras con los cupones</p>
+                </div>
+                <form>
+                    <label for="inputPrice">
+                        <span>Ingresa el precio</span>
+                        <input id="inputPrice" type="number">
+                    </label>
+                    <label for="inputCoupon">
+                        <span>Ingresa el cupon</span>
+                        <input id="inputCoupon" type="text">
+                    </label>
+                    <button type="button" onclick="addCoupon()">Calcular descuento</button>
+                    <p id="discountProductSuccess"></p>
+                    <p id="discountProductFail"></p>
+                </form>
+            </article>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

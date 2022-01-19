@@ -38,14 +38,21 @@ const calcPerimetroCuadrado = () => {
     // obtener valor del input
     const value = input.value;
     const perimetro = perimetroCuadrado(value);
-    alert(`El perimetro es de: ${perimetro}cm`);
+    
+    //Inyectando al DOM
+    const idPerimetro = document.getElementById("perimetroCuadrado")
+
+    idPerimetro.innerHTML = `El perimetro es de: ${perimetro}cm`
 };
 
 const calcAreaCuadrado = () => {
     const input = document.getElementById("inputCuadrado");
     value = input.value
     const area = areaCuadrado(value);
-    alert(`El area del cuadrado es: ${area}cm`);
+    
+    const idArea = document.getElementById("areacuadrado");
+
+    idArea.innerHTML = `El area del cuadrado es: ${area}cm`;
 };
 
 //Triangulo
@@ -58,7 +65,11 @@ const calcPerimetroTriangulo = () => {
     ladoB = parseInt(input2.value);
     base = parseInt(input3.value);
     const perimetro = perimetroTriangulo(ladoA,ladoB,base);
-    alert(`El perimetro del triangulo es de: ${perimetro}`);
+
+    const idPerimetro = document.getElementById("perimetrotriangulo")
+
+    idPerimetro.innerHTML = `El perimetro del triangulo es de: ${perimetro}`
+
 };
 
 const calcAreaTriangulo = () => {
@@ -67,7 +78,10 @@ const calcAreaTriangulo = () => {
     base = input1.value;
     altura = input2.value;
     const area = areaTriangulo(base,altura);
-    alert(`El area del triangulo es de: ${area}`);
+
+    const idArea = document.getElementById("areatriangulo");
+
+    idArea.innerHTML = `El area del triangulo es de: ${area}`;
 };
 
 //circulo

@@ -53,7 +53,7 @@ body {
     border: .3rem solid rgb(134, 110, 110);
     border-radius: .5rem;
     width: 300px;
-    height: 500px;
+    height: 540px;
     margin-top: 3rem;
 }
 .card .box-img {
@@ -131,6 +131,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 .form-items .box-button button {
     width: 250px;
@@ -142,13 +143,24 @@ body {
     font-size: 1rem;
     font-family: 'Luxurious Roman';
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: .2rem;
     transition: all .2s ease-in;
 }
 .form-items .box-button button:first-child {
-    margin-top: -1.5rem;
+    margin: 0;
 }
+
+
 .form-items .box-button button:hover {
     background: rgb(134, 110, 110);
     color: black;
+}
+
+.containerDiv {
+    display: flex;
+    flex-direction: column;
+}
+.containerDiv p {
+    color: seashell;
+    margin: -10px;
 }
